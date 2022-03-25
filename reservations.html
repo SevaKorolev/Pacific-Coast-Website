@@ -1,0 +1,190 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .parallax {
+            background-image: url(images/coast.jpg);
+            min-height: 350px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header {
+            background-color: #28324e;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 40px;
+        }
+
+        .nav {
+            margin-top: -16px;
+            text-align: right;
+        }
+
+        body {
+            color: black;
+            font-family: sans-serif;
+            background-color: #28324e;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+            background: #28324e;
+            font-weight: 500;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            object-position: bottom;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 8px ridge black;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px 1px;
+            color: white;
+            padding-bottom: 10px;
+        }
+            a:hover {
+                color: lightblue;
+            }
+        .h {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            padding-right: 1px;
+            padding-left: 1px;
+            color: white;
+        }
+        input[type=text]{
+            width:200px;
+            text-align:center;
+        }
+        input[type=email] {
+            width:200px;
+            text-align:center;
+        }
+        input[type=tel]{
+            width:200px;
+            text-align:center;
+        }
+        input[type=date]{
+            margin-left:49px;
+            margin-top:20px;
+        }
+        input[type=submit]{
+            margin-top:20px;
+            margin-bottom:100px;
+        }
+        @media screen and (min-width: 480px) {
+            #leftsidebar {
+                width: 200px;
+                float: left;
+            }
+
+            #main {
+                margin-left: 216px;
+            }
+        }
+    </style>
+    <title>Pacific Trails Resort</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <a href="index.html">Home</a> &nbsp;
+            <a href="yurts.html">Yurts</a>&nbsp;
+            <a href="activities.html">Activities</a> &nbsp;
+            <a href="reservations.html" style="color: lightgreen">Reservations</a>&nbsp;
+            <a href="about.html">About Us</a>&nbsp;
+        </div>
+        <div class="header">
+            <h1>Pacific Trails Resort</h1>
+        </div>
+        <div class="parallax"></div>
+    </header>
+
+    <main>
+        <div class="h">
+            <h2 style="font-family: Arial">Reservations at Pacific Trails</h2>
+        </div>
+
+        <form method="get" action="http://webdevbasics.net/scripts/demo.php">
+
+            <label for="username">First Name*</label>
+            <input type="text" name="username" placeholder="Your First Name" required><br><br>
+
+            <label for="username">Last Name*</label>
+            <input type="text" id="username" placeholder="Your Last Name" required><br><br>
+
+
+            <div style="display:flex; flex-direction:row;justify-content:left;">
+                <label>
+                    Email*
+                </label>
+                <div style="margin-left:41px;">
+                    <input type="email" name="email-address" placeholder="name@domain.com" required>
+                </div>
+            </div>
+
+            <div style="display:flex; flex-direction:row;justify-content:left;padding-top:20px">
+                <label>
+                    Phone*
+                </label>
+                <div style="display:flex;margin-left:34px;">
+                    <input type="tel" placeholder="Phone #" required>
+                </div>
+            </div>
+
+            <label>Date</label>
+            <input type="date"><br>
+
+            <div style="display:flex; flex-direction:row;justify-content:left;padding-top:20px">
+                <label>Nights:</label>
+
+                <div style="margin-left:37px;">
+                    <select name="day">
+                        <option value="1" selected>1 Night</option>
+                        <option value="2">2 Nights</option>
+                        <option value="3">3 Nights</option>
+                        <option value="4">4 Night</option>
+                        <option value="5">5 Nights</option>
+                        <option value="6">6 Nights</option>
+                        <option value="7">7 Nights</option>
+                        <option value="8">8 Nights</option>
+                        <option value="9">9 Nights</option>
+                        <option value="10">10 Nights</option>
+                    </select>
+                </div>
+            </div>
+            <br><br>
+            <label>Comments:</label><br>
+            <textarea id="comment" name="comment" rows="5" cols="60" ; margin-bottom:100px;>Please tell us more details about your stay</textarea><br>
+
+            <input type="submit" name="submit" value="Submit Info" style="margin-bottom:20px">
+            
+            <br>
+            <button type="button" onclick="window.location.href='survey.html'" alt="Link is not working">Survey</button>
+            
+            <footer>
+                <div style="text-align:right">
+                    <small><i>Copyright © 2022 Pacific Trails Resort | </i></small>
+                    <a href="mailto:vsevolod.korolev@email.kpu.ca"><i><small>vsevolod.korolev@email.kpu.ca</small></i></a>
+                </div>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>
+

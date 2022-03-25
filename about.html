@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .parallax {
+            background-image: url(/images/coast.jpg);
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h2, h3 {
+            font-family: serif;
+            background-color: #28324e;
+            color: white;
+        }
+
+        body {
+            color: black;
+            font-family: sans-serif;
+            background-color: #28324e;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+            background: #28324e;
+            font-weight: 500;
+        }
+
+        .header {
+            background-color: #28324e;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 40px;
+        }
+
+        .footer {
+            background-color: #F1F1F1;
+            text-align: right;
+            padding: 100px;
+            padding-top: 300px;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            object-position: bottom;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px 1px;
+            color: white;
+            padding-bottom: 10px;
+        }
+            a:hover {
+                color: lightblue;
+            }
+
+        .nav {
+            padding-top: 3px;
+            text-align: right;
+        }
+
+
+        .wrapper {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+            .wrapper > div {
+                border: 2px solid rgb(23,171,88);
+                border-radius: 1px;
+                background-color: #28324e;
+                padding: 3em;
+                color: white;
+                padding: 50px 50px;
+                vertical-align: middle;
+            }
+
+
+        .column {
+            float: left;
+            width: 30%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width:480px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 10px 0 rgba(1, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+            .container::after, row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+
+
+
+        @media screen and (max-width:480px) {
+            .image1{
+                padding-top:20px;
+                padding-right:20px;
+                margin-bottom:30px;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .image2 {
+                padding-top: 20px;
+                padding-right: 20px;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .image3 {
+                padding-top: 20px;
+                padding-right: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+    <title>Pacific Trails Resort</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <a href="index.html">Home</a> &nbsp;
+            <a href="yurts.html">Yurts</a>&nbsp;
+            <a href="activities.html">Activities</a> &nbsp;
+            <a href="reservations.html">Reservations</a>&nbsp;
+            <a href="about.html"style="color: lightgreen">About Us</a>&nbsp;
+        </div>
+        <div class="header">
+            <h1>Pacific Trails Resort</h1>
+        </div>
+        <div class="parallax"></div>
+    </header>
+
+    <main>
+        <h2 style="font-family: Arial">Meet our Team!</h2>
+            <p>Vincent Parker, the CEO of Pacific Trails resort, and his Co-Founder Florence M Weaver, in 2005 founded the resort.
+            Later, in 2011 when the company grew bigger, Barbara P Watson became the General Manager of Pacific Trails Resort. 
+            </p><br>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="image1">
+                        <img src="images/person1.png" alt="coast" style="width:90%">
+                        </div>
+                        <div class="container">
+                            <h2>Vincent D Parker</h2>
+                            <p class="title">CEO &amp;Founder</p>
+                            <p>Vincent D Parker founded Pacific Trails Resort in 2005</p>
+                            <p>vincentparker@email.com</p>
+                            <p><button class="button">Contact</button><p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/person2.jpg" alt="coast" style="width:90%">
+                    <div class="container">
+                        <h2>Florence M Weaver</h2>
+                        <p class="title">Head Manager &amp;CoFounder</p>
+                        <p>Florence M Weaver is the Head Manager at Pacific Trails</p>
+                        <p>florenceweaver@email.com</p>
+                        <p><button class="button">Contact</button><p>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="column">
+                <div class="card">
+                    <img src="images/person3.jpg" alt="coast" style="width:90%">
+                    <div class="container">
+                        <h2>Barbara P Watson</h2>
+                        <p class="title">General Manager</p>
+                        <p>General Manager of Pacific Trails Resort since 2011</p>
+                        <p>barbarywatson@email.com</p>
+                        <p><button class="button">Contact</button><p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="padding-top:700px">
+            <small><i>Copyright © 2022 Pacific Trails Resort | </i></small>
+            <a href="mailto:vsevolod.korolev@email.kpu.ca"><i><small>vsevolod.korolev@email.kpu.ca</small></i></a>
+        </footer>
+
+    </main>
+</body>
+</html>
+
