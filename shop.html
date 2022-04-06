@@ -143,13 +143,11 @@
             display: table;
         }
 
-
         .title {
             color: grey;
             margin-bottom: 100px;
         }
-
-     
+ 
         input {
             margin-left: 20px;
             border-style: solid;
@@ -229,9 +227,8 @@
                         206 pages.<br>Softcover. $24.95
                     </p>
                 </div>
-                <form method="post"
-                      action="https://webdevbasics.net/cart.html">
-                    <input type="submit" value="Add to Cart" style="margin-top:20px ; margin-left:10px">
+                <form method="post" name="Add to Cart" action="https://webdevbasics.net/cart.html">
+                    <input type="submit" name="Add to Cart" value="Add to cart" style="margin-top:20px ; margin-left:10px">
                 </form>
             </div>
         </div>
@@ -242,32 +239,18 @@
                         <th>Namaste Yoga Set qtw<input type="text" id="fnum"></th>
                         <th>Lotus Yoga Set qtw<input type="text" id="rnum"></th>
                     </tr>
-
                     <tr>
                         <td><input type="button" onClick="multiplyBy()" Value="Calculate" style="margin-left:25px; margin-bottom:10px; margin-top:10px"></td>
                     </tr>
-                    <tr>
-                        <td>Your total cost is: </td>
-                    </tr>
-                    <tr>
-                        <td><span id="result"><br></span></td>
-                    </tr>
-                    <tr>
-                        <td>total cost of nset:</td>
-                    </tr>
-                    <tr>
-                        <td><span id="nset"><br></span></td>
-                    </tr>
-                    <tr>
-                        <td>total cost of lset:</td>
-                    </tr>
-                    <tr>
-                        <td><span id="lset"><br></span></td>
-                    </tr>
+                    <tr><td>Your total cost is: </td></tr>
+                    <tr><td><span id="result"><br></span></td></tr>
+                    <tr><td>Total cost of Namaste set:</td></tr>
+                    <tr><td><span id="nset"><br></span></td></tr>
+                    <tr><td>Total cost of Lotus set:</td></tr>
+                    <tr><td><span id="lset"><br></span></td></tr>
                 </table>
             </form>
             <script type="text/javascript">
-
                 function multiplyBy() {
                     num1 = document.getElementById("fnum").value;
                     num2 = 49.99;
@@ -286,6 +269,5 @@
             </div>
         </footer>
     </main>
-
 </body>
 </html>
