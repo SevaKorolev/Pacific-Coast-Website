@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="description" content="This is the pacific coast website, we provide overnight stay services in the middle of the woods in luxurious yurts">
+    <style>
+        .parallax {
+            background-image: url(/images/coast.jpg);
+            min-height: 300px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h2, h3 {
+            font-family: serif;
+            background-color: #28324e;
+            color: white;
+        }
+
+        body {
+            color: black;
+            font-family: sans-serif;
+            background-color: #28324e;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+            background: #28324e;
+            font-weight: 500;
+        }
+
+        .header {
+            background-color: #28324e;
+            text-align: center;
+            padding-top: 1px;
+            padding-bottom: 40px;
+        }
+
+
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            object-position: bottom;
+            display: block;
+            margin-right: auto;
+            border: none;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px 1px;
+            color: white;
+            padding-bottom: 10px;
+        }
+
+            a:hover {
+                color: lightblue;
+            }
+
+        .nav {
+            padding-top: 3px;
+            text-align: right;
+        }
+
+
+        .column1 {
+            float: left;
+            width: 35%;
+            padding-right: 20px;
+            padding-left: 150px;
+            padding-bottom: 100px;
+            display: inline-block;
+        }
+
+        .column2 {
+            float: left;
+            width: 35%;
+            display: inline-block;
+        }
+
+        @media screen and (max-width:800px) {
+            .column1 {
+                width: 100%;
+                display: block;
+            }
+
+            .column2 {
+                margin-top:-90px;
+                margin-bottom:20px;
+                width: 100%;
+                display: block;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .column1 {
+                margin-left:-150px;
+                width: 100%;
+                display: block;
+            }
+
+            .column2 {
+                margin-top:-100px;
+                margin-bottom:20px;
+                width: 100%;
+                display: block;
+            }
+        }
+        .card {
+            box-shadow: 0 4px 10px 0 rgba(1, 0, 0, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .container1 {
+            padding: 0 10px;
+            margin-bottom: 39px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .container::after, row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .container2 {
+            padding: 0 10px;
+            margin-bottom: 1px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .container::after, row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        .title {
+            color: grey;
+            margin-bottom: 100px;
+        }
+
+     
+        input {
+            margin-left: 20px;
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        table {
+            border: 1px solid;
+            padding: 5px;
+        }
+
+        .tablecss {
+            padding-left: 260px;
+            margin-top:-50px;
+            text-align: left;
+            display: inline-block;
+        }
+
+    </style>
+    <title>Pacific Trails Resort</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="index.html">Home</a> &nbsp;
+            <a href="yurts.html">Yurts</a>&nbsp;
+            <a href="activities.html">Activities</a> &nbsp;
+            <a href="reservations.html">Reservations</a>&nbsp;
+            <a href="about.html">About Us</a>&nbsp;
+            <a href="shop.html" style="color: lightgreen">Shop</a>&nbsp;
+        </div>
+        <div class="header">
+            <h1>Pacific Trails Resort</h1>
+        </div>
+        <div class="parallax"></div>
+    </header>
+    
+    <main>
+        <h2 style="font-family: Arial">Shop at Pacific Trails Resort</h2>
+        <br>
+        <div class="column1">
+            <div class="card">
+                <img src="images/trailguide.jpg" alt="coast" style="width:30%; float:right">
+                <div class="container1">
+                    <h2>Pacific Trails Resort</h2>
+                    <p>
+                        Guided hikes to the best trails<br>
+                        around Pacific Trails Resort.<br>
+                        Each hike includes a detailed<br>
+                        route, distance, elevation change,
+                        <br>and estimated time.<br><br>
+                        187 pages<br>Softcover:$19.95
+                    </p>
+                </div>
+                <form method="post"
+                      action="https://webdevbasics.net/cart.html">
+                    <input type="submit" value="Add to Cart" style="margin-top: 20px; margin-left: 10px">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="column2">
+            <div class="card">
+                <img src="images/yurtyoga.jpg" alt="coast" style="width:30%; float:right">
+                <div class="container2">
+                    <h2>Yoga Yurt</h2>
+                    <p>
+                        Enjoy the restorative poses<br>
+                        of yurt yoga in the comfort of <br>
+                        your own home. Each pose is<br>
+                        illustrated with several <br>
+                        photographs, an explanation,<br>
+                        and a description of the<br>
+                        restorative benefits<br><br>
+                        206 pages.<br>Softcover. $24.95
+                    </p>
+                </div>
+                <form method="post"
+                      action="https://webdevbasics.net/cart.html">
+                    <input type="submit" value="Add to Cart" style="margin-top:20px ; margin-left:10px">
+                </form>
+            </div>
+        </div>
+        <div class="tablecss">
+            <form>
+                <table>
+                    <tr>
+                        <th>Namaste Yoga Set qtw<input type="text" id="fnum"></th>
+                        <th>Lotus Yoga Set qtw<input type="text" id="rnum"></th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" onClick="multiplyBy()" Value="Calculate" style="margin-left:25px; margin-bottom:10px; margin-top:10px"></td>
+                    </tr>
+                    <tr>
+                        <td>Your total cost is: </td>
+                    </tr>
+                    <tr>
+                        <td><span id="result"><br></span></td>
+                    </tr>
+                    <tr>
+                        <td>total cost of nset:</td>
+                    </tr>
+                    <tr>
+                        <td><span id="nset"><br></span></td>
+                    </tr>
+                    <tr>
+                        <td>total cost of lset:</td>
+                    </tr>
+                    <tr>
+                        <td><span id="lset"><br></span></td>
+                    </tr>
+                </table>
+            </form>
+            <script type="text/javascript">
+
+                function multiplyBy() {
+                    num1 = document.getElementById("fnum").value;
+                    num2 = 49.99;
+                    num3 = document.getElementById("rnum").value;
+                    num4 = 39.99;
+                    document.getElementById("result").innerHTML = (num1 * num2) + (num3 * num4);
+                    document.getElementById("nset").innerHTML = (num1 * num2);
+                    document.getElementById("lset").innerHTML = (num3 * num4);
+                }
+            </script>
+        </div>
+        <footer>
+            <div style="text-align:right">
+                <small><i>Copyright © 2022 Pacific Trails Resort | </i></small>
+                <a href="mailto:vsevolod.korolev@email.kpu.ca"><i><small>vsevolod.korolev@email.kpu.ca</small></i></a>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
